@@ -750,13 +750,56 @@ count word that are in lower case in string
 // }
 
 
-/*======== Question no 1 ==================
-
+/*======== Question no 48 ==================
+math.round,sqrt,abs,ceil,floor,
 */
 // ********** Answer********
+// let num = 4.57;
+// let result = Math.round(num);
+// console.log(result);
+// let num = 9;
+// let result = Math.sqrt(num);
+// console.log(result)
+
+// let num = -567;
+// console.log(num);
+// let need = Math.abs(num);
+// console.log(need)
+
+// let num = 34.231;
+// let need = Math.ceil(num);
+// console.log(need)
 
 
-/*======== Question no 1 ==================
-
+/*======== Question no 49 ==================
+math.random()
 */
 // ********** Answer********
+// function randoming(){let dayName = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
+ 
+//   let random = Math.floor(Math.random()* dayName.length);
+  
+//   let result = dayName[random];
+//   document.getElementById('ph').textContent = result;
+// }
+
+/*======== Question no 49 ==================
+Write a program that takes three numbers and prints the largest using Math.max().
+
+Example Input:
+
+let a = 12, b = 25, c = 8;
+Expected Output
+25
+*/
+// ********** Answer********
+function maxNumberFinder(){let get1 = document.getElementById('it1').value;
+
+  let get2 = document.getElementById('it2').value;
+
+  let get3 = document.getElementById('it3').value;
+
+  let result = Math.max(get1,get2,get3);
+  
+  document.getElementById('p1').innerHTML = result;}
+
