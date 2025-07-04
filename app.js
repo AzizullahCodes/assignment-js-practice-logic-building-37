@@ -544,118 +544,210 @@ Create an object like this:
 // for(let i = 0; i < keys.length; i++){result[keys[i]] = values[i]}
 // console.log(result)
 /*======== Question no 32 ==================
+Toggle Dark Mode
+Question:
+Create a button that toggles the dark-mode class on the body element 
+when clicked.
+HTML Example:
+<button id="modeBtn">Toggle Dark Mode</button>
+*/
+// ********** Answer********
+// function modeBtn(){let get = document.getElementById('heading');
+//   get.classList.add('color')
+// }
+
+// function removing(){let get = document.getElementById('heading');
+//   get.classList.remove('color')
+// }
+// function toggling(){let get = document.getElementById('heading');
+//   get.classList.toggle('color')
+// }
+/*======== Question no 33 ==================
+Create a div. When you hover over it, add a class called hovered using
+ JavaScript.
+HTML Example:
+<div id="hoverBox">Hover me!</div>
+*/
+// ********** Answer********
+// function toggleBtn(){let get = document.getElementById('myBox');
+//   get.classList.toggle('hidden')
+// }
+
+/*======== Question no 34 ==================
+img showing hidden
+*/
+// ********** Answer********
+// function toggleBtn(){let get = document.getElementById('myImg');
+//   get.classList.toggle('hidden')
+// }
+
+/*======== Question no 35 ==================
+nav toggle
+*/
+// ********** Answer********
+// function toggling(){let get = document.getElementById('ulid');
+//   get.classList.toggle('hidden')
+// }
+
+
+/*======== Question no 36 ==================
+Task 1: Price Calculator
+Create a function calculateTotal(price, taxRate) that calculates total 
+with tax.
+Expected output: calculateTotal(19.99, 0.08) → "21.59"
+*/
+// ********** Answer********
+// function calculateTotal(){let getPrice = parseFloat(document.getElementById('it').value);
+//   let getTextRate = parseFloat(document.getElementById('it2').value);
+//   let result = getPrice + getTextRate;
+//   result = result.toFixed(2)
+//   document.getElementById('ph').innerHTML = result;
+
+// }
+
+/*======== Question no 37 ==================
+
+Write a function that takes the radius as input and returns the 
+circumference of the circle using the formula:
+Circumference = 2 × Math.PI × radius
+*/
+// ********** Answer********
+// function pipractice(){let get = document.getElementById('it').value;
+//   let needed = 2 * Math.PI * get;
+//    needed = Math.floor(needed)
+//   document.getElementById('ph').innerHTML = needed;
+// }
+
+
+/*======== Question no 38 ==================
+.toString convert 
+*/
+// ********** Answer********
+// function stringConversion(){let get = parseFloat(document.getElementById('it').value);
+//   let check = typeof get;
+//   document.getElementById('ph').textContent = check;
+//   let result = String(get);
+//   let check2 = typeof result;
+//   document.getElementById('ph1').innerHTML = check2;
+// }
+
+/*======== Question no 39 ==================
+string to number convert
+*/
+// ********** Answer********
+// function numberConversion(){let get = document.getElementById('it').value; 
+//   let check = typeof get;
+//   document.getElementById('ph').innerText = check;
+//   let needed = Num (get);
+//   let check2 = typeof needed;
+//   document.getElementById('ph1').textContent = needed;
+//   document.getElementById('ph2').textContent = check2;
+// }
+
+/*======== Question no 40 ==================
+charAt()
+*/
+// ********** Answer********
+// function charat(){let get = document.getElementById('it').value;
+//   let firstCharacter = get.charAt(0);
+//   document.getElementById('ph1').innerText = firstCharacter;
+//   let middleCharacter = get.charAt(2);
+//   document.getElementById('ph2').innerText = middleCharacter;
+//   let lastCharacter = get.charAt(get.length -1);
+//   document.getElementById('ph3').innerText = lastCharacter
+// }
+
+
+
+/*======== Question no 41 ==================
+
+Write a program to count how many times the letter 'a' appears in a word 
+using .charAt() inside a loop.
+
+✅ Input: "JavaScript"
+✅ Output: 2
+*/
+// ********** Answer********
+// function counting(){let get = document.getElementById('it').value;
+//   let result = 0;
+//   for(let i = 0; i<get.length; i++){if(get.charAt(i) === 'a'){result++;}}
+//   document.getElementById('ph').innerHTML = result;
+// }
+
+/*======== Question no 42 ==================
 
 */
 // ********** Answer********
-// let data = [{id : 1,
-//   name : 'Ali'
-// },{id : 2, 
-//   name : 'sara'
-// },
-// {id : 3, 
-//   name : 'Abid'
-// }];
-// let result = {};
-// for(let i = 0; i < data.length ; i++){let current = data[i];
-//   console.log(current);
-//  result[current.id] = current
+// let word = 'azizaxsa';
+// function counting(){let result = 0;
+//   for(let i = 0; i <word.length; i++){if(word.charAt(i) === 'a'){result++}}
+//   console.log(result)
+// }
+
+
+/*======== Question no 43 ==================
+Convert Sentence to Lowercase
+Description:
+Take a sentence and convert the entire sentence to lowercase.
+
+✅ Input: "Hello JavaScript!"
+✅ Output: "hello javascript!"
+*/
+// ********** Answer********
+// function changing(){let get = document.getElementById('it').value;
+//   let result = get.toLowerCase();
+//   document.getElementById('ph').innerHTML = result;
+// }
+
+/*======== Question no 44 ==================
+Check if the first character of a string is in uppercase or lowercase.
+✅ Input: "JavaScript"
+✅ Output: "First letter is uppercase"
+*/
+// ********** Answer********
+// let word = 'iava';
+// let char = word.charAt(0);
+// console.log(char);
+// if(char === char.toUpperCase()){console.log('first char is uppercase')}
+// else{console.log('first char is lower case')}
+
+/*======== Question no 45 ==================
+Write a program that counts how many uppercase letters are in 
+a given string.
+✅ Input: "HeLLo"
+✅ Output: 3
+💡 Use .charAt(i) and compare with .toUpperCase().
+*/
+// ********** Answer********
+// let str = 'hanDKERchIef';
+// let result = 0;
+// for(let i = 0;  i < str.length; i++){let char = str.charAt(i);
+//   if(char === char.toUpperCase() && char !== char.toLowerCase()){result++}
+  
 // }
 // console.log(result)
 
-/*======== Question no 1 ==================
+/*======== Question no 46 ==================
+count word that are in lower case in string
+*/
+// ********** Answer********
+// let str = 'uyHeLHHo';
+// let count = 0;
+// for(let i = 0; i <str.length; i++){let need = str.charAt(i);
+//  if(need === need.toLowerCase() && need !== need.toUpperCase()){count++;}
+// }
+// console.log(count)
+/*======== Question no 47 ==================
 
 */
 // ********** Answer********
-
-
-/*======== Question no 1 ==================
-
-*/
-// ********** Answer********
-
-
-/*======== Question no 1 ==================
-
-*/
-// ********** Answer********
-
-
-
-/*======== Question no 1 ==================
-
-*/
-// ********** Answer********
-
-
-/*======== Question no 1 ==================
-
-*/
-// ********** Answer********
-
-
-
-/*======== Question no 1 ==================
-
-*/
-// ********** Answer********
-
-
-/*======== Question no 1 ==================
-
-*/
-// ********** Answer********
-
-
-/*======== Question no 1 ==================
-
-*/
-// ********** Answer********
-
-
-
-
-/*======== Question no 1 ==================
-
-*/
-// ********** Answer********
-
-
-/*======== Question no 1 ==================
-
-*/
-// ********** Answer********
-
-
-/*======== Question no 1 ==================
-
-*/
-// ********** Answer********
-
-
-/*======== Question no 1 ==================
-
-*/
-// ********** Answer********
-
-
-/*======== Question no 1 ==================
-
-*/
-// ********** Answer********
-
-
-
-/*======== Question no 1 ==================
-
-*/
-// ********** Answer********
-
-
-/*======== Question no 1 ==================
-
-*/
-// ********** Answer********
-
+// function casing(){let get = document.getElementById('it').value;
+//   let count = 0;
+//   for(let i = 0; i < get.length; i++){let char = get.charAt(i);
+//     if(char === char.toLowerCase() && char !== char.toUpperCase()){count++;}
+//   }
+//   document.getElementById('ph').innerHTML = count;
+// }
 
 
 /*======== Question no 1 ==================

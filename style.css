@@ -2,3 +2,29 @@
 /* .list{text-decoration: none;}
  .anotherClass{font-size: 60px;
 font-family: sans-serif;}  */
+
+/* ques no 32 */
+
+/* .color{color:red;} */
+
+/* ques no 34 */
+/* .hidden{display: none;} */
+
+/* nav{background-color: aqua;
+
+}
+.ulclass{display: flex;
+justify-content: center;
+gap: 50px;
+align-items: center;
+
+}
+
+.btnclass{position: relative;
+left:100px;
+display: none;}
+@media(max-width:768px){.ulclass{display: flex;
+flex-direction: column;
+display: none;}
+.btnclass{display: block;}
+.hidden{display: block;}} */
